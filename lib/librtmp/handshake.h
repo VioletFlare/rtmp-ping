@@ -172,7 +172,7 @@ HMACsha256(const uint8_t *message, size_t messageLen, const uint8_t *key,
            size_t keylen, uint8_t *digest)
 {
     unsigned int digestLen;
-    HMAC_CTX ctx = HMAC_CTX_new();
+    HMAC_CTX ctx;
 
     HMAC_setup(ctx, key, keylen);
     HMAC_crunch(ctx, message, messageLen);
