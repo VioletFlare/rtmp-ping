@@ -157,6 +157,19 @@ typedef struct tls_ctx
 #define TLS_close(s)	gnutls_deinit(s)
 
 #else	/* USE_OPENSSL */
+
+#if defined(USE_GNUTLS)
+#include <gnutls/gnutls.h>
+#define MD5_DIGEST_LENGTH 16
+#include <nettle/base64.h>
+#include <nettle/md5.h>
+#else	/* USE_OPENSSL */
+#include <openssl/ssl.h>
+#include <openssl/md5.h>
+#include <openssl/bio.h>
+#include <openssl/buffer.h>
+#endif
+
 #define TLS_CTX	SSL_CTX *
 #define TLS_client(ctx,s)	s = SSL_new(ctx)
 #define TLS_setfd(s,fd)	SSL_set_fd(s,fd)

@@ -33,7 +33,7 @@
 #include "log.h"
 
 #include "happy-eyeballs.h"
-#include <util/platform.h>
+#include <../util/platform.h>
 
 #if !defined(MSG_NOSIGNAL)
 #define MSG_NOSIGNAL 0

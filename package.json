@@ -2,14 +2,16 @@
   "name": "rtmp-ping",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "src/ping.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "npm i",
+    "test": "node ./tests/test.js"
   },
   "author": "VioletFlare",
   "license": "ISC",
   "gypfile": true,
   "dependencies": {
+    "bindings": "^1.5.0",
     "node-api-headers": "^1.1.0"
   }
 }
