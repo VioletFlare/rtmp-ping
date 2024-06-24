@@ -1,7 +1,7 @@
 # Usage
 
 ```
-const RTMPPing = require('../src/rtmp-ping');
+const RTMPPing = require('rtmp-ping');
 ```
 
 ```
