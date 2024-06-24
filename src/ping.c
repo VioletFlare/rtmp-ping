@@ -2,12 +2,19 @@
 #include "../node_modules/node-api-headers/include/node_api.h"
 #include "../lib/librtmp/rtmp.h"
 #include <stdlib.h>
+#include <stdio.h>
 
 double RTMP_Ping(char* url) {
     RTMP* r = RTMP_Alloc();
-    RTMP_SetupURL(r, url);
     RTMP_Init(r);
+    RTMP_SetupURL(r, url);
+    RTMP_Connect(r, NULL);
     RTMP_SendCtrl(r, 6, 0, 0);
+
+    RTMPPacket* p;
+    RTMPPacket_Alloc(p, 1);
+
+    RTMP_ClientPacket(r, p);
     return 20;
 }
 
