@@ -2,7 +2,7 @@
   "name": "rtmp-ping",
   "version": "1.0.0",
   "description": "",
-  "main": "src/ping.js",
+  "main": "src/rtmp-ping.js",
   "scripts": {
     "dev": "node-gyp build --debug",
     "build": "npm i",
