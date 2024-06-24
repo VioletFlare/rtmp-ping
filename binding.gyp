@@ -9,6 +9,7 @@
         "src/ping.c" 
       ],
       'include_dirs': [
+        "<!(node -e \"require('node-api-headers')\")/include",
         'lib/librtmp'
       ]
     }

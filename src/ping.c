@@ -1,5 +1,5 @@
 #include <assert.h>
-#include "../node_modules/node-api-headers/include/node_api.h"
+#include <node_api.h>
 #include "../lib/librtmp/rtmp.h"
 #include <stdlib.h>
 #include <stdio.h>
