@@ -4,13 +4,15 @@
 const RTMPPing = require('../src/rtmp-ping');
 ```
 
-### RTMPPing.getPingMS(RTMPUrl)
+```
+// Get ping in milliseconds where RTMPUrl is the rtmp:// url to the resource.
 
-Get ping in milliseconds where RTMPUrl is the `rtmp://` url to the resource.
+RTMPPing.getPingMS(RTMPUrl)
 
-### RTMPPing.getPingUS(RTMPUrl)
+// Get ping in microseconds.
 
-Get ping in microseconds.
+RTMPPing.getPingUS(RTMPUrl)
+```
 
 # Building (Debian)
 
