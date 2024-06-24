@@ -3,11 +3,11 @@ var ping = require('bindings')('ping.node')
 class RTMPPing {
 
     getPingUS(url) {
-        return Number(ping.ping(url));
+        return new Promise(resolve => resolve(Number(ping.ping(url))));
     }
 
     getPingMS(url) {
-        return (Number(ping.ping(url)) / 1000)
+        return new Promise(resolve => resolve((Number(ping.ping(url)) / 1000)))
     }
 
 }

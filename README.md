@@ -14,6 +14,14 @@ RTMPPing.getPingMS(RTMPUrl)
 RTMPPing.getPingUS(RTMPUrl)
 ```
 
+Example:
+
+```
+RTMPPing.getPingMS(RTMPUrl).then(pingms => {
+    console.log('Ping in millis: ', pingms)
+})
+```
+
 # Building (Debian)
 
 ```
