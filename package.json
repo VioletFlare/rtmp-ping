@@ -1,6 +1,6 @@
 {
   "name": "rtmp-ping",
-  "version": "1.0.5",
+  "version": "1.0.6",
   "description": "",
   "main": "src/rtmp-ping.js",
   "scripts": {
@@ -12,7 +12,7 @@
   "license": "ISC",
   "repository": {
     "type": "git",
-    "url": "https://github.com/VioletFlare/rtmp-ping.git"
+    "url": "git+https://github.com/VioletFlare/rtmp-ping.git"
   },
   "gypfile": true,
   "dependencies": {
